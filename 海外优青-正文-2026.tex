@@ -1,0 +1,147 @@
+%!TEX program = xelatex
+\documentclass[UTF8, punct, oneside, fontset=none]{ctexbook}
+\usepackage[windows]{nsfc}
+\usepackage{fontspec}
+\usepackage{microtype}
+%【注意】在sections/个性化设置.sty中，设置修改选项。
+
+\pagestyle{empty} % 页码空白
+\usepackage[a4paper, left = 1.06in, right = 1.06in, top = 1in, bottom = 1in]{geometry}%页边距
+% \usepackage{ulem}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{0.3ex}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\usepackage{times}
+\usepackage{setspace}
+\usepackage{comment}
+\graphicspath{{figures/}}   % 设置图片所存放的目录
+
+% 我的眼睛就是尺，尽力在微调了。
+% HY word模板真是顶级防伪.T_T.
+
+
+\begin{document}
+\vspace{6.65pt}
+{\centering\zhhei\enkai\fontsize{18pt}{28pt}\selectfont
+\setlength{\baselineskip}{28pt}%最后设置，防止被fontsize中的覆盖
+报告正文 \textbf{Main Body of Proposal}\par
+}
+\vspace{14pt}
+
+{\ziju{-0.075}\zhkai\fontsize{14pt}{28pt}\selectfont
+\setlength{\baselineskip}{28pt}%最后设置，防止被fontsize中的覆盖
+\setlength{\parindent}{0.45in}
+参照以下提纲撰写，要求内容翔实、清晰，层次分明，标题突出。}
+
+{\zhkai\enkai\fontsize{14pt}{28pt}\selectfont
+\setlength{\baselineskip}{28pt}%最后设置，防止被fontsize中的覆盖
+\setlength{\parindent}{0.45in}
+
+The proposal shall be written in accordance with the following outline, with informative content, clear structure, and prominent titles.
+
+\textbf{\color{NSFblue}请勿删除或改动下述提纲标题及括号中的文字。}
+
+\color{NSFblue}Please do not delete or change the title of the outline and the words in brackets.\par
+\vspace{5.65pt}}
+
+% ==========================================================
+\chapter[-3.4pt]{\textbf{主要学术成绩}（建议不超过4000字）
+
+\hspace{5pt}\textbf{\textls[-25]{Major academic achievements (no more than 4000 words)}}
+\vspace{5.65pt}
+
+\hspace{5pt}{\ziju{-0.02}着重阐述所取得研究成果的创新性、科学价值及本人贡献等。
+\vspace{5.65pt}}
+
+\hspace{5pt}\textls[-15]{In this part, you shall focus on the innovativeness and scientific value of the research results, and your personal contribution.}
+}
+
+\begin{MS}
+	\input{sections/一主要学术成绩}
+\end{MS}
+
+% ==========================================================
+\chapter[-3.4pt]{\textbf{全职回国（来华）后拟开展的研究工作}（建议不超过4000字）
+\vspace{8.15pt}
+
+\hspace{3pt}\textls[-10]{The research work to be carried out after returning/coming to China full-time (no more than 4000 words)}
+\vspace{9.5pt}
+
+\hspace{3pt}{\ziju{-0.014}主要阐述全职回国（来华）后主要研究方向和思路、预期目标、团队和科研条件的支撑情况。}
+\vspace{8.15pt}
+
+\hspace{3pt}\textls[0]{In this part, you shall mainly expound the main research direction and ideas, expected goals, team and research conditions after returning/coming to China full-time.}}
+
+\begin{MS}
+	\input{sections/二研究工作}
+\end{MS}
+
+% ==========================================================
+\chapter[-3.4pt]{\textbf{其他需要说明的问题 Other issues need to be addressed.}
+\vspace{6.75pt}
+
+\hspace{5pt}1.申请人同年申请不同类型的国家自然科学基金项目情况（列明同年{\ziju{-0.03}申请的其他项目的项目类型、项目名称信息，并说明与本项目之间的区别与}{\ziju{-0.11}联系；已收到自然科学基金委不予受理或不予资助决定的，无需列出）。}
+
+\hspace{5pt}\textls[15]{Proposals that the applicant has submitted for different types of NSFC} programs in the same year (please list the types of programs and title of proposals submitted in the same year, and explain the differences and connections with this \\
+{\spaceskip=0.5em plus 0.1em minus 0.1em proposal; \uline{proposals deemed ineligible or unfundable by the NSFC can be}} \\ \uline{excluded}).
+
+\begin{MS}
+    \color{black}
+	\input{sections/三1同年申请}
+\end{MS}
+
+\hspace{5pt}2.申请人是否存在同年申请或者参与申请国家自然科学基金项目的单{\ziju{-0.03}位不一致的情况（如存在上述情况，列明所涉及人员的姓名，申请或参与申请的其他项目的项目类型、项目名称、单位名称、上述人员在该项目中是申}{\ziju{-0.04}请人还是参与者，并说明单位不一致原因）。}
+
+\hspace{5pt}\textls[-15]{{\spaceskip=0.2em plus 0.1em minus 0.1em Whether the applicant's host institution is inconsistent with the one indicated} {\spaceskip=0.3em plus 0.1em minus 0.1emin other proposals that he or she submits or participates in applying in the same} \\
+{\spaceskip=0.4em plus 0.1em minus 0.1em year (if there is any such inconsistency, please list the names of the personnel} \\{\spaceskip=0.2em plus 0.2em minus 0.1em involved, the types of programs, titles of proposals, names of host institutions for other projects that you applied or participated in, whether the abovementioned personnel are the applicants or participants in the projects, and explain the reasons for the inconsistency).}}
+
+\begin{MS}
+    \color{black}
+	\input{sections/三2单位不一致}
+\end{MS}
+
+\hspace{5pt}3.{\ziju{0.05}申请人是否存在与正在承担的国家自然科学基金项目的单位不一}{\ziju{0.01}致的情况（如存在上述情况，列明所涉及人员的姓名，正在承担项目的批}{\ziju{-0.01}准号、项目类型、项目名称、单位名称、起止年月，并说明单位不一致原因\\）。}
+
+\hspace{5pt}\textls[-25]{\spaceskip=0.28em plus 0.1em minus 0.1em Whether the applicant's host institution is inconsistent with the one indicated in the NSFC project that he/she is undertaking (if there is any such inconsistency, please list the name of the personnel involved, approval number, type of program, title of proposal, name of host institution, start and end dates of the undertaking project, and explain the reasons for the inconsistency).}
+
+\begin{MS}
+    \color{black}
+	\input{sections/三3已有不一致}
+\end{MS}
+
+\hspace{5pt}4.{\ziju{0.01}申请人教育或工作经历若不连续请说明原因。}
+
+\hspace{5pt}\textls[-15]{\spaceskip=0.3em plus 0.1em minus 0.1em If there is any discontinuity in education or work experience, please explain the reason.}
+
+\begin{MS}
+    \color{black}
+	\input{sections/三4经历不连续}
+\end{MS}
+
+\hspace{5pt}5.同年以不同专业技术职务（职称）申请或参与申请科学基金项目的{\ziju{0.02}情况（应详细说明原因）。}
+
+\hspace{5pt}\textls[-20]{\spaceskip=0.28em plus 0.1em minus 0.1em Situation where the applicant applies for NSFC programs as PI or participant using different professional or academic titles in the same year (Please elaborate on the reasons).}
+
+\begin{MS}
+    \color{black}
+	\input{sections/三5不同职称}
+\end{MS}
+
+\hspace{5pt}6.科研经费需求（300字以内）。
+
+\hspace{5pt}Research funding needs (no more than 300 words).
+
+\begin{MS}
+    \color{black}
+	\input{sections/三6经费需求}
+\end{MS}
+
+\hspace{5pt}7.其他。 Others.
+
+\begin{MS}
+    \color{black}
+	\input{sections/三7其他}
+\end{MS}
+}
+\end{document}
